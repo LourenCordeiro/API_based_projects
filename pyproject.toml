@@ -1,0 +1,20 @@
+[project]
+name = "api-based-projects"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Louren Mayara", email = "cordeiroalves.1994@outlook.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi[standard]>=0.142.0",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+api-based-projects = "api_based_projects:main"
+
+[build-system]
+requires = ["uv_build>=0.12.20,<0.13.0"]
+build-backend = "uv_build"
